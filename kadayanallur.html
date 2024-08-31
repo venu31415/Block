@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>கடையநல்லூர் வேளாண்மை</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .container {
+            margin: 20px 0;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .content {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .link {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header><img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\kadayanallur img.jpg"></header>
+    <h1>கடையநல்லூர் வேளாண்மை</h1>
+    <div class="content">
+        <p>கடையநல்லூர்,இந்தியாவின் தமிழ்நாடு மாநிலத்தில் அமைந்துள்ள தென்காசி மாவட்டத்தில் இருக்கும் ஒரு முதல் நிலை நகராட்சி ஆகும். உற்பத்திப் பொருட்கள் கைத்தறி ஆடைகள், தீப்பெட்டி, தானியங்கள், மண்பாண்டங்கள், திராட்சை, நெல் ஆகும்கடையநல்லூர் ஊரானது திருமங்கலம் - கொல்லம் NH744 தேசிய நெடுஞ்சாலையில் அமைந்துள்ளது.</p>
+            
+    </div>
+    <div class="container">
+        <a class="link" href="crop page.html">பயிர்கள்</a>
+        <button onclick="window.location.href='crop page.html'">
+            <img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\crop img.jpg">
+        </button>
+
+        <a class="link" href="weather.html">வானிலை</a>
+        <button onclick="window.location.href='weather.html'">
+            <img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\weather img.jpeg">
+        </button>
+
+        <a class="link" href="ada_office.html">வேளாண் அலுவலகம்</a>
+        <button onclick="window.location.href='ada_office.html'">
+            <img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\ada office img.jpeg">
+        </button>
+
+        <a class="link" href="schemes.html">திட்டங்கள்</a>
+        <button onclick="window.location.href='schemes.html'">
+            <img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\scheme img.jpg">
+        </button>
+
+        <a class="link" href="market_price.html">சந்தை விலை</a>
+        <button onclick="window.location.href='market_price.html'">
+            <img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\market price img.webp">
+        </button>
+
+        <a class="link" href="itk.html">பாரம்பரிய வேளாண்மை</a>
+        <button onclick="window.location.href='itk.html'">
+            <img src="C:\Users\krish\Desktop\PROJECT\KADAYANALLUR\itk img.jpg">
+        </button>
+    </div>
+    <script>
+        // Smooth scroll effect for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+   
+
+</body>
+</html>
