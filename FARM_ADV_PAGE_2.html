@@ -11,7 +11,7 @@
      <meta content="Farm advisory App for Tenkasi District"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-   <style>button {
+  <style>button {
         margin: 5px 40px 15px;
         padding: 10px;
         border: none;  background-color: rgb(131, 255, 127); 
@@ -25,8 +25,13 @@
         vertical-align: center;
         margin-right: 8px; padding-right:20px;
     }
-    
-    
+        
+    }
+    .cards { display:grid; border: 1px  solid black;
+        border-radius:15px; width:250px; height:600px;
+        text-align:center; background-color: rgb(240, 240, 240); opacity:0.8; padding-bottom:50px;
+        padding-right:30px; margin:10px; overflow-x:scroll;
+    }
     input{
     margin: 5px 40px 15px;
     padding: 10px;
@@ -34,27 +39,14 @@
     border-radius: 15px; 
     cursor: pointer;align:center;
     font-size: 10px;}
-       
-    card { display:inline-block;
+    .card { display:inline-block;
         border: 1px  solid black; flex-direction:column;
         border-radius:15px; width:250px; height:700px;
         text-align:center; background-color: rgb(240, 240, 240); opacity:0.8; padding-bottom:50px;
         padding-right:20px; margin:10px 10px 10px 30px ; 
         overflow-x:scroll;
     }
-    
-
-
-    .loader { 
-        display: none; 
-        border: 4px solid rgba(255, 255, 255, 0.3); 
-        border-top: 4px solid green; 
-        border-radius: 50%; 
-        width: 25px; 
-        height: 25px; 
-        animation: spin 1s linear infinite; 
-        margin-left: 10px; 
-    } 
+  
 
 </style>
     
